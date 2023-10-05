@@ -1,0 +1,100 @@
+.App {
+    background-color: rgba(185, 185, 185, 0.438);
+    border-radius: 15px;
+    margin-left: 30vw;
+    margin-right: 20vw;
+    margin-top: 8vw;
+    text-align: center;
+    font-family: monospace;
+    font-size: 17px;
+    height: 380px;
+    width: 550px;
+    place-items: center;
+    position: relative;
+    background-color: #FFF;
+}
+
+.App::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    height: 390px;
+    width: 550px;
+    border-radius: 20px;
+    background: linear-gradient(red, rgb(83, 173, 9));
+    z-index: -1;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg) brightness(100%) blur(20px);
+    }
+
+    100% {
+        filter: hue-rotate(360deg) brightness(100%) blur(20px);
+    }
+
+}
+
+img {
+    width: 14%;
+    height: 14%;
+    margin-top: 10%;
+}
+
+#valores {
+    border-radius: 9px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid black;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button {
+    border-radius: 10px;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: #FFF;
+    margin-top: 30px;
+    margin-left: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+
+}
+
+#result {
+    padding-top: 40px;
+}
+
+#ident {
+    margin-left: -130px;
+}
+
+#ident2 {
+    margin-left: 130px;
+    margin-top: -35px;
+}
+
+#contagens {
+    margin-left: -170%;
+    margin-top: -40%;
+    font-size: 18px;
+}
+
+#empate {
+    color: black;
+}
+
+#vitorias {
+    color: green;
+}
+
+#derrotas {
+    color: red;
+}
